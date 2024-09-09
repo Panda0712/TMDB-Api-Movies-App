@@ -130,16 +130,16 @@ html {
 }
 
 @media screen and (max-width: 380px) {
-  .category-item.carousel {
+  .category-item.item {
     max-width: 230px !important;
   }
 
-  .category-item.carousel .category-wrapper img {
+  .category-item.item .category-wrapper img {
     width: 230px !important;
     height: 300px !important;
   }
 
-  .category-item.carousel h3 {
+  .category-item.item h3 {
     max-width: 230px !important;
     height: 40px !important;
   }

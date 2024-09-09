@@ -6,7 +6,7 @@ function CategoryItem({ movie, carousel }) {
   return (
     <div
       key={movie.id}
-      className={`category-item ${carousel === "true" ? "carousel" : ""}`}
+      className={`category-item ${carousel === "true" ? "item" : ""}`}
     >
       <div
         className="category-wrapper"
