@@ -134,7 +134,9 @@ function CategoryList({ title }) {
         swipeable
       >
         {data.length > 0 &&
-          data.map((movie) => <CategoryItem key={movie.id} movie={movie} />)}
+          data.map((movie) => (
+            <CategoryItem carousel="true" key={movie.id} movie={movie} />
+          ))}
       </Carousel>
     </div>
   );

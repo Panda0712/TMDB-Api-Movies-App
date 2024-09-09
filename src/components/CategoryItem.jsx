@@ -1,10 +1,13 @@
 import { useNavigate } from "react-router-dom";
 
-function CategoryItem({ movie }) {
+function CategoryItem({ movie, carousel }) {
   const navigate = useNavigate();
 
   return (
-    <div key={movie.id} className="category-item">
+    <div
+      key={movie.id}
+      className={`category-item ${carousel === "true" ? "carousel" : ""}`}
+    >
       <div
         className="category-wrapper"
         onClick={() =>
