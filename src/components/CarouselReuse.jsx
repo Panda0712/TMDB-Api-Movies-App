@@ -70,15 +70,15 @@ function CarouselReuse({ movies, onClick }) {
               <div className="carousel-detail">
                 <ul>
                   <li>
-                    <i class="fa-solid fa-calendar-days"></i>
+                    <i className="fa-solid fa-calendar-days"></i>
                     <span>{movie.release_date || movie.first_air_date}</span>
                   </li>
                   <li>
-                    <i class="fa-solid fa-gauge"></i>
+                    <i className="fa-solid fa-gauge"></i>
                     <span>{movie.vote_average}</span>
                   </li>
                   <li>
-                    <i class="fa-solid fa-check-to-slot"></i>
+                    <i className="fa-solid fa-check-to-slot"></i>
                     <span>{movie.vote_count}</span>
                   </li>
                 </ul>

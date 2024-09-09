@@ -18,21 +18,35 @@ function Footer() {
       <ul className="footer-list">
         <h4>Contact</h4>
         <p style={{ display: "flex", alignItems: "center", gap: "10px" }}>
-          <i class="fa-solid fa-phone"></i>
+          <i className="fa-solid fa-phone"></i>
           <span>19002404</span>
         </p>
         <p style={{ display: "flex", alignItems: "center", gap: "10px" }}>
-          <i class="fa-solid fa-envelope"></i>
+          <i className="fa-solid fa-envelope"></i>
           <span>tuan.pham.super@gmail.com</span>
         </p>
         <span>Follow us on:</span>
         <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
-          <li>
-            <i class="fa-brands fa-facebook"></i>
-          </li>
-          <li>
-            <i class="fa-brands fa-instagram"></i>
-          </li>
+          <a
+            href="https://www.facebook.com/kamiyama.touma.902"
+            style={{ color: "#fff" }}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <li>
+              <i className="fa-brands fa-facebook"></i>
+            </li>
+          </a>
+          <a
+            href="https://www.instagram.com/kyunnxneon.u/"
+            style={{ color: "#fff" }}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <li>
+              <i className="fa-brands fa-instagram"></i>
+            </li>
+          </a>
         </div>
       </ul>
     </footer>

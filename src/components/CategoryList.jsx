@@ -110,9 +110,17 @@ function CategoryList({ title }) {
           mobile: {
             breakpoint: {
               max: 600,
-              min: 0,
+              min: 380,
             },
             items: 2,
+            partialVisibilityGutter: 30,
+          },
+          smallMobile: {
+            breakpoint: {
+              max: 380,
+              min: 0,
+            },
+            items: 1,
             partialVisibilityGutter: 30,
           },
         }}

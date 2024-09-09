@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 import { useParams } from "react-router-dom";
 import { fetchSearchQuery } from "../utils/api";
 import CategoryItem from "../components/CategoryItem";
@@ -24,18 +24,20 @@ function SearchTerm() {
     });
   }, [searchTerm, page]);
 
+  const memoizedSearchData = useMemo(() => searchData, [searchData]);
+
   function handlePageClick(event) {
     setPage(+event.selected + 1);
     window.scrollTo({ top: "0", behavior: "smooth" });
   }
 
-  if (searchData?.length <= 0) return <Spinner />;
+  if (memoizedSearchData?.length <= 0) return <Spinner />;
 
   return (
     <div className="movies-topic">
       <ul className="movies-list">
-        {searchData.length > 0 &&
-          searchData.map((movie) => (
+        {memoizedSearchData.length > 0 &&
+          memoizedSearchData.map((movie) => (
             <li key={movie.id} className="movies-item">
               <CategoryItem movie={movie} />
             </li>

@@ -3,8 +3,6 @@ import { useNavigate } from "react-router-dom";
 function CategoryItem({ movie }) {
   const navigate = useNavigate();
 
-  console.log(movie);
-
   return (
     <div key={movie.id} className="category-item">
       <div
@@ -24,7 +22,7 @@ function CategoryItem({ movie }) {
           alt={movie.name}
         />
         <div>
-          <i class="fa-solid fa-play category-playIcon"></i>
+          <i className="fa-solid fa-play category-playIcon"></i>
         </div>
       </div>
       <h3>{movie.title || movie.name}</h3>

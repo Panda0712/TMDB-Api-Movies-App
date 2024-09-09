@@ -36,6 +36,14 @@ html {
 }
 
 @media screen and (max-width: 600px) {
+  .page-link {
+    font-size: 12px !important;
+  }
+
+  .page-item {
+    margin: 0 2px !important;
+  }
+
   .movie-box {
     flex-wrap: wrap;
   }
@@ -47,6 +55,10 @@ html {
 
   .movie-videos {
     gap: 15px !important;
+  }
+
+  .movie-videos div {
+    width: 90% !important;
   }
 
   .movie-wrapper h3 {
@@ -114,6 +126,22 @@ html {
   .movies-list {
     gap: 10px !important;
     padding: 0 10px !important;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .category-item {
+    max-width: 230px !important;
+  }
+
+  .category-wrapper img {
+    width: 230px !important;
+    height: 300px !important;
+  }
+
+  .category-item h3 {
+    max-width: 230px !important;
+    height: 40px !important;
   }
 }
 
@@ -552,6 +580,10 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.movie-videos div p {
+  text-align: center;
 }
 
 .react-player {
